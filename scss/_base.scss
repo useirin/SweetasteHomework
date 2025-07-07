@@ -3,7 +3,7 @@
     outline: 1px solid blue;
 } */
 
-/* 通用設定 */
+/* 全域設定 */
 *,
 *::before,
 *::after {
@@ -31,6 +31,8 @@ i {
     color: $color-primary;
 }
 
+
+/* 通用設定 */
 button {
     &:hover {
         cursor: pointer;
@@ -45,6 +47,18 @@ button {
     i:hover {
         color: $color-hover;
     }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bold {
+    font-weight: $font-weight-semibold;
+}
+
+.bg-primary {
+    background: $color-primary;
 }
 
 /* 容器 */
@@ -95,16 +109,4 @@ button {
 
 .pd-16 {
     padding: 16px;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.bold {
-    font-weight: $font-weight-semibold;
-}
-
-.bg-primary {
-    background: $color-primary;
 }

@@ -138,7 +138,7 @@ table {
 * {
     outline: 1px solid blue;
 } */
-/* 通用設定 */
+/* 全域設定 */
 *,
 *::before,
 *::after {
@@ -166,6 +166,7 @@ i {
   color: #3f5d45;
 }
 
+/* 通用設定 */
 button:hover {
   cursor: pointer;
 }
@@ -175,6 +176,18 @@ button:hover {
 }
 .icon i:hover {
   color: #8DA291;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bg-primary {
+  background: #3f5d45;
 }
 
 /* 容器 */
@@ -218,18 +231,7 @@ button:hover {
   padding: 16px;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.bg-primary {
-  background: #3f5d45;
-}
-
+/* 導覽列 */
 .nav {
   justify-content: space-between;
   align-items: center;
@@ -256,6 +258,7 @@ button:hover {
   font-size: 24px;
 }
 
+/* 郵件訂閱 */
 .mail {
   align-items: center;
 }
@@ -293,6 +296,7 @@ button:hover {
   opacity: 0.7;
 }
 
+/* 頁尾資訊 */
 .footer {
   background: #eaf0ed;
 }
