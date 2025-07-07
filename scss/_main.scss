@@ -1,0 +1,132 @@
+.sidebar {
+    text-align: center;
+    min-width: 416px;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-primary;
+    line-height: $line-height-button;
+
+    :first-child {
+        border-radius: 6px 6px 0 0;
+    }
+
+    :last-child {
+        border-radius: 0 0 6px 6px;
+    }
+
+    h2 {
+        background: $color-primary;
+        color: $color-text;
+    }
+
+    &-link {
+        display: block;
+        border: 1px solid $color-secondary;
+
+        &:hover {
+            background: $color-secondary;
+            text-decoration: underline;
+        }
+    }
+
+    &-current {
+        display: block;
+        background: $color-secondary;
+    }
+}
+
+.list {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    position: relative;
+    width: calc((100% - 24px) / 2);
+
+    .label,
+    .favorite {
+        position: absolute;
+        z-index: 10;
+    }
+
+    .label {
+        writing-mode: vertical-lr;
+        font-weight: $font-weight-semibold;
+        color: $color-text;
+        background: $color-primary;
+        left: 24px;
+        padding: 13px 10px;
+        line-height: 1;
+        letter-spacing: 5px;
+    }
+
+    .favorite {
+        top: 12px;
+        right: 24px;
+        font-size: $font-size-primary;
+        font-weight: $font-weight-semibold;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.price {
+    font-size: $font-size-secondary;
+    text-align: center;
+
+    &-item {
+        width: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid $color-secondary;
+    }
+
+    p {
+        font-weight: $font-weight-semibold;
+    }
+}
+
+.btn {
+    width: 100%;
+    background: $color-secondary;
+    font-size: $font-size-primary;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-button;
+    color: $color-primary;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 0;
+
+    &:hover {
+        background: $color-primary;
+        color: $color-text;
+    }
+}
+
+.pagination {
+    justify-content: flex-end;
+    font-size: $font-size-secondary;
+    font-weight: $font-weight-semibold;
+
+    li,
+    a {
+        display: block;
+        border: 1px solid $color-secondary;
+        width: 56px;
+        height: 56px;
+        text-align: center;
+        align-content: center;
+    }
+
+    &-link:hover {
+        background: $color-secondary;
+    }
+
+    &-current {
+        background: $color-primary;
+        color: $color-text;
+    }
+
+}
