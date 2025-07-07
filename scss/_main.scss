@@ -56,7 +56,7 @@
         background: $color-primary;
         left: 24px;
         padding: 13px 10px;
-        line-height: 1;
+        line-height: $line-height-20;
         letter-spacing: 5px;
     }
 
@@ -109,6 +109,7 @@
     justify-content: flex-end;
     font-size: $font-size-secondary;
     font-weight: $font-weight-semibold;
+    line-height: $line-height-20;
 
     li,
     a {
@@ -128,5 +129,4 @@
         background: $color-primary;
         color: $color-text;
     }
-
 }
