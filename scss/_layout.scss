@@ -69,8 +69,12 @@
         border-radius: 0 10px 10px 0;
 
         &:hover {
-            opacity: 0.7;
+            opacity: 0.5;
         }
+    }
+
+    i {
+        font-size: $font-size-secondary;
     }
 }
 
@@ -78,21 +82,22 @@
 /* 頁尾資訊 */
 .footer {
     background: $color-secondary;
-
-    .row {
-        justify-content: space-between;
-    }
 }
 
 .info {
     flex-direction: column;
 
     img {
-        width: 171px;
+        max-width: 171px;
     }
 
+    a,
     p {
         font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     .sns {

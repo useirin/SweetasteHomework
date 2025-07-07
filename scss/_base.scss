@@ -53,6 +53,10 @@ button {
     display: flex;
 }
 
+.jc-sb {
+    justify-content: space-between;
+}
+
 .bold {
     font-weight: $font-weight-semibold;
 }
