@@ -62,6 +62,10 @@ button {
 }
 
 .mb {
+    &-auto {
+        margin-bottom: auto;
+    }
+
     &-48 {
         margin-bottom: 48px;
     }
@@ -89,9 +93,7 @@ button {
     }
 }
 
-.mt-auto {
-    margin-top: auto;
-}
+.mt-auto {}
 
 .pd-16 {
     padding: 16px;

@@ -191,6 +191,9 @@ button:hover {
   margin: 0 auto;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -209,10 +212,6 @@ button:hover {
 }
 .ml-16 {
   margin-left: 16px;
-}
-
-.mt-auto {
-  margin-top: auto;
 }
 
 .pd-16 {
