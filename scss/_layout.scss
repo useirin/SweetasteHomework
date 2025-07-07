@@ -1,0 +1,111 @@
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo {
+    width: 220px;
+}
+
+.menu {
+    align-items: center;
+    width: 336px;
+
+    .menu-item {
+        padding: 8px 24px;
+
+        &:hover {
+            background: $color-hover;
+            color: $color-text;
+        }
+    }
+
+    .cart {
+        font-size: $font-size-primary;
+    }
+}
+
+
+
+
+.mail {
+    align-items: center;
+
+    img {
+        width: 40px;
+    }
+
+    p {
+        color: $color-secondary;
+        font-size: $font-size-primary;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+}
+
+.subscription {
+    width: 416px;
+    background: $color-secondary;
+    border-radius: 10px;
+
+    label {
+        padding: 12px 20px;
+    }
+
+    input {
+        font-size: $font-size-secondary;
+        background: transparent;
+        border: none;
+        outline: none;
+        flex: 1;
+    }
+
+    button {
+        background: $color-accent;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 0 10px 10px 0;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.footer {
+    background: $color-secondary;
+
+    .row {
+        justify-content: space-between;
+    }
+}
+
+.info {
+    flex-direction: column;
+
+    img {
+        width: 171px;
+    }
+
+    p {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .sns {
+        font-size: 32px;
+        gap: 8px;
+    }
+}
+
+.slogan {
+    text-align: right;
+
+    img {
+        width: 88px;
+    }
+
+    p {
+        font-family: times, serif;
+    }
+}

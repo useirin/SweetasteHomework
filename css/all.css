@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Debug 用
+* {
+    outline: 1px solid blue;
+} */
+/* 通用設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PinFang TC", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #3f5d45;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3f5d45;
+}
+
+i {
+  color: #3f5d45;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+.icon i:hover {
+  color: #8DA291;
+}
+
+/* 容器 */
+.container-main {
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+.container-footer {
+  max-width: 1100px;
+  padding: 32px 12px;
+  margin: 0 auto;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.ml-24 {
+  margin-left: 24px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.pd-16 {
+  padding: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bg-primary {
+  background: #3f5d45;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  width: 220px;
+}
+
+.menu {
+  align-items: center;
+  width: 336px;
+}
+.menu .menu-item {
+  padding: 8px 24px;
+}
+.menu .menu-item:hover {
+  background: #8DA291;
+  color: #ffffff;
+}
+.menu .cart {
+  font-size: 24px;
+}
+
+.mail {
+  align-items: center;
+}
+.mail img {
+  width: 40px;
+}
+.mail p {
+  color: #eaf0ed;
+  font-size: 24px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.subscription {
+  width: 416px;
+  background: #eaf0ed;
+  border-radius: 10px;
+}
+.subscription label {
+  padding: 12px 20px;
+}
+.subscription input {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+.subscription button {
+  background: #ffe180;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+.subscription button:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  background: #eaf0ed;
+}
+.footer .row {
+  justify-content: space-between;
+}
+
+.info {
+  flex-direction: column;
+}
+.info img {
+  width: 171px;
+}
+.info p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.info .sns {
+  font-size: 32px;
+  gap: 8px;
+}
+
+.slogan {
+  text-align: right;
+}
+.slogan img {
+  width: 88px;
+}
+.slogan p {
+  font-family: times, serif;
+}
+
+.sidebar {
+  text-align: center;
+  min-width: 416px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.sidebar :first-child {
+  border-radius: 6px 6px 0 0;
+}
+.sidebar :last-child {
+  border-radius: 0 0 6px 6px;
+}
+.sidebar h2 {
+  background: #3f5d45;
+  color: #ffffff;
+}
+.sidebar-link {
+  display: block;
+  border: 1px solid #eaf0ed;
+}
+.sidebar-link:hover {
+  background: #eaf0ed;
+  text-decoration: underline;
+}
+.sidebar-current {
+  display: block;
+  background: #eaf0ed;
+}
+
+.list {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  width: calc((100% - 24px) / 2);
+}
+.card .label,
+.card .favorite {
+  position: absolute;
+  z-index: 10;
+}
+.card .label {
+  writing-mode: vertical-lr;
+  font-weight: 600;
+  color: #ffffff;
+  background: #3f5d45;
+  left: 24px;
+  padding: 13px 10px;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+.card .favorite {
+  top: 12px;
+  right: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.card .favorite:hover {
+  transform: scale(1.2);
+}
+
+.price {
+  font-size: 20px;
+  text-align: center;
+}
+.price-item {
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #eaf0ed;
+}
+.price p {
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  background: #eaf0ed;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3f5d45;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 0;
+}
+.btn:hover {
+  background: #3f5d45;
+  color: #ffffff;
+}
+
+.pagination {
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pagination li,
+.pagination a {
+  display: block;
+  border: 1px solid #eaf0ed;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  align-content: center;
+}
+.pagination-link:hover {
+  background: #eaf0ed;
+}
+.pagination-current {
+  background: #3f5d45;
+  color: #ffffff;
+}
