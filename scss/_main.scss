@@ -1,6 +1,6 @@
 .sidebar {
     text-align: center;
-    min-width: 416px;
+    width: 416px;
     font-weight: $font-weight-semibold;
     font-size: $font-size-primary;
     line-height: $line-height-button;
@@ -35,6 +35,7 @@
 }
 
 .list {
+    max-width: 856px;
     flex-wrap: wrap;
     gap: 24px;
 }

@@ -338,7 +338,7 @@ button:hover {
 
 .sidebar {
   text-align: center;
-  min-width: 416px;
+  width: 416px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
@@ -367,6 +367,7 @@ button:hover {
 }
 
 .list {
+  max-width: 856px;
   flex-wrap: wrap;
   gap: 24px;
 }
